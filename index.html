@@ -102,9 +102,11 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <!-- <li class="navbar-item navbar-item--bold navbar-item--separate">Đăng ký</li>
-                        <li class="navbar-item navbar-item--bold">Đăng nhập</li> -->
-                        <li class="navbar-item navbar-item-user">
+                        <!-- Login/Register Interface -->
+                        <li class="navbar-item navbar-item--bold navbar-item--separate js-register">Đăng ký</li>
+                        <li class="navbar-item navbar-item--bold js-login">Đăng nhập</li>
+                        <!-- User Interface -->
+                        <!-- <li class="navbar-item navbar-item-user">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTIP7uCj-UAjFG-Fn9Syx2zRCSmN_aFqzsw&usqp=CAU"
                                 alt="" class="user-img">
                             <span class="user-name">Hai Anh Nguyen Thi</span>
@@ -122,7 +124,7 @@
                                     <a href="">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
                 <div class="search">
@@ -157,6 +159,9 @@
                                     <li class="search-history-item">
                                         <a href="">Laneige dưỡng ẩm</a>
                                     </li>
+                                    <li class="search-history-item">
+                                        <a href="">Merzy Christmas Version</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -168,7 +173,7 @@
                                     <span>Trong shop</span>
                                     <i class="ti-check"></i>
                                 </li>
-                                <li class="search-select-item search-select--active">
+                                <li class="search-select-item">
                                     <span>Tất cả các shop</span>
                                     <i class="ti-check"></i>
                                 </li>
@@ -366,7 +371,7 @@
                                         <div class="product-img"
                                             style="background-image: url(https://cf.shopee.vn/file/0540bd57ca3f4af5fc581696e330ca05);">
                                         </div>
-                                        <h4 class="product-name">Son bóng Romand Glasting Tint New Version 2021</h4>
+                                        <h4 class="product-name">Son bóng Romand Glasting Tint Special Christmas Version 2021</h4>
                                         <div class="product-price">
                                             <span class="product-price--old">240.000đ</span>
                                             <span class="product-price--new">140.000đ</span>
@@ -438,7 +443,7 @@
                                 <div class="col l-2-4 m-4 c-6">
                                     <a class="product-item" href="#">
                                         <div class="product-img"
-                                            style="background-image: url(https://product.hstatic.net/1000006063/product/d6ef9496b93396c6b924eee9d3fbd5ab_ff2eba29c31848bfa744427dad7e7e76.jpeg);">
+                                            style="background-image: url(https://product.hstatic.net/200000135107/product/f_887736656c114b7d8e56973e1c5516ee.jpg);">
                                         </div>
                                         <h4 class="product-name">Son bóng Romand Glasting Tint New Version 2021</h4>
                                         <div class="product-price">
@@ -623,7 +628,7 @@
                                 <div class="col l-2-4 m-4 c-6">
                                     <a class="product-item" href="#">
                                         <div class="product-img"
-                                            style="background-image: url(https://product.hstatic.net/1000006063/product/d6ef9496b93396c6b924eee9d3fbd5ab_ff2eba29c31848bfa744427dad7e7e76.jpeg);">
+                                            style="background-image: url(https://product.hstatic.net/200000135107/product/f_887736656c114b7d8e56973e1c5516ee.jpg);">
                                         </div>
                                         <h4 class="product-name">Son bóng Romand Glasting Tint New Version 2021</h4>
                                         <div class="product-price">
@@ -866,16 +871,55 @@
         </footer>
     </div>
 
-    <!-- Modal layout -->
-    <!-- <div class="modal">
+    <!-- Modal Login -->
+    <div class="modal modal-login">
         <div class="modal__overlay"></div>
-        <div class="modal__body"> -->
-    <!-- Register form -->
-    <!-- <div class="modal-auth">
+        <div class="modal__body modal__body-login">
+            <div class="modal-auth">
+                <div class="auth__container">
+                    <div class="auth__header">
+                        <h3 class="auth__heading">Đăng nhập</h3>
+                        <span class="auth__switch-btn js-switch-register">Đăng ký</span>
+                    </div>
+                    <div class="auth__form">
+                        <div class="auth__form-group">
+                            <input type="email" class="auth__form-input" placeholder="Nhập email của bạn">
+                        </div>
+                        <div class="auth__form-group">
+                            <input type="password" class="auth__form-input" placeholder="Nhập mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth__help">
+                        <a href="" class="auth__help-link auth__help--forgot">Quên mật khẩu</a>
+                        <a href="" class="auth__help-link">Cần trợ giúp?</a>
+                    </div>
+                    <div class="auth__control">
+                        <button class="btn btn-back btn-back-login">TRỞ LẠI</button>
+                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth__connect">
+                    <button class="btn btn--icon btn--icon-facebook">
+                        <i class="ti-icon ti-facebook"></i>
+                        <span class="btn-title">Kết nối với Facebook</span>
+                    </button>
+                    <button class="btn btn--icon btn--icon-google">
+                        <i class="ti-icon ti-google"></i>
+                        <span class="btn-title">Kết nối với Google</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Register -->
+    <div class="modal modal-register">
+        <div class="modal__overlay"></div>
+        <div class="modal__body modal__body-register">
+            <div class="modal-auth">
                 <div class="auth__container">
                     <div class="auth__header">
                         <h3 class="auth__heading">Đăng ký</h3>
-                        <span class="auth__switch-btn">Đăng nhập</span>
+                        <span class="auth__switch-btn js-switch-login">Đăng nhập</span>
                     </div>
                     <div class="auth__form">
                         <div class="auth__form-group">
@@ -896,43 +940,8 @@
                         </p>
                     </div>
                     <div class="auth__control">
-                        <button class="btn btn-back">TRỞ LẠI</button>
+                        <button class="btn btn-back btn-back-register">TRỞ LẠI</button>
                         <button class="btn btn-primary">ĐĂNG KÝ</button>
-                    </div>
-                </div>
-                <div class="auth__connect">
-                    <button class="btn btn--icon btn--icon-facebook">
-                        <i class="ti-icon ti-facebook"></i>
-                        <span class="btn-title">Kết nối với Facebook</span>
-                    </button>
-                    <button class="btn btn--icon btn--icon-google">
-                        <i class="ti-icon ti-google"></i>
-                        <span class="btn-title">Kết nối với Google</span>
-                    </button>
-                </div>
-            </div> -->
-    <!-- Login form -->
-    <!-- <div class="modal-auth">
-                <div class="auth__container">
-                    <div class="auth__header">
-                        <h3 class="auth__heading">Đăng nhập</h3>
-                        <span class="auth__switch-btn">Đăng ký</span>
-                    </div>
-                    <div class="auth__form">
-                        <div class="auth__form-group">
-                            <input type="email" class="auth__form-input" placeholder="Nhập email của bạn">
-                        </div>
-                        <div class="auth__form-group">
-                            <input type="password" class="auth__form-input" placeholder="Nhập mật khẩu">
-                        </div>
-                    </div>
-                    <div class="auth__help">
-                        <a href="" class="auth__help-link auth__help--forgot">Quên mật khẩu</a>
-                        <a href="" class="auth__help-link">Cần trợ giúp?</a>
-                    </div>
-                    <div class="auth__control">
-                        <button class="btn btn-back">TRỞ LẠI</button>
-                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
                     </div>
                 </div>
                 <div class="auth__connect">
@@ -947,7 +956,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
-</body>
+    </div>
 
+    <script src="./app.js">
+    
+    </script>
+</body>
 </html>
