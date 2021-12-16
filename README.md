@@ -10,7 +10,7 @@
 > Features
 - Search, select products.
 - Login, register user account.
-- Notification
-- Category
-- Show products
+- Notificate.
+- View cart, category.
+- Show products.
 
